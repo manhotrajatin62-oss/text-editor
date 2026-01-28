@@ -1,6 +1,31 @@
 @import "tailwindcss";
 
-*{
-    box-sizing: border-box;
-    font-family: sans-serif;
+@layer base{
+    h1{
+        @apply text-3xl
+    }
+    h2{
+        @apply text-xl
+    }
+    ul{
+        @apply list-disc list-inside
+    }
+    ol{
+        @apply list-decimal list-inside
+    }
+}
+
+@layer components{
+    .button{
+        @apply cursor-pointer hover:bg-gray-100 text-lg bg-white text-black border border-gray-300 p-2 rounded-lg outline-0
+    }
+}
+
+body{
+    background-color: #f5eee3;
+}
+
+.button.active {
+  background: rgb(0, 0, 0);
+  color: white;
 }
