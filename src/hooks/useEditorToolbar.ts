@@ -4,6 +4,7 @@ export const useEditorToolbar = () => {
   const [active, setActive] = useState({
     h1: false,
     h2: false,
+    p: false,
     bold: false,
     italic: false,
     underline: false,
@@ -19,6 +20,7 @@ export const useEditorToolbar = () => {
     setActive({
       h1: formatBlock === "h1",
       h2: formatBlock === "h2",
+      p: formatBlock === "p",
       bold: document.queryCommandState("bold"),
       italic: document.queryCommandState("italic"),
       underline: document.queryCommandState("underline"),

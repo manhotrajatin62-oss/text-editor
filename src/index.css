@@ -13,11 +13,17 @@
     ol{
         @apply list-decimal list-inside
     }
+    a{
+        @apply text-blue-600 underline
+    }
 }
 
 @layer components{
     .button{
         @apply cursor-pointer hover:bg-gray-100 text-lg bg-white text-black border border-gray-300 p-2 rounded-lg outline-0
+    }
+    .input{
+        @apply  outline-0 w-full text-sm
     }
 }
 
