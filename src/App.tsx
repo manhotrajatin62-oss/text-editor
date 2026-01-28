@@ -1,11 +1,11 @@
 import CustomEditor from "./pages/CustomEditor";
-import LexicalEditor from "./pages/lexical/LexicalEditor";
+import TipTapEditor from "./pages/tiptap/TipTapEditor";
 
 const App = () => {
   return (
     <>
       <CustomEditor />
-      {/* <LexicalEditor/> */}
+      <TipTapEditor/>
     </>
   );
 };

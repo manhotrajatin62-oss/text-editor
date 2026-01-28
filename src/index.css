@@ -35,3 +35,14 @@ body{
   background: rgb(0, 0, 0);
   color: white;
 }
+
+.ProseMirror {
+  height: 360px;
+  min-height: 100%;
+  overflow: auto;
+  border: 1px solid #d1d5dc;
+  outline: none;
+  margin-top: 20px;
+  padding: 8px;
+}
+
